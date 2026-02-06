@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Student Join - Flow Optima Queue</title>
+    <link rel="stylesheet" href="../styles/login-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">🎓</div>
+            <h1>Join Queue</h1>
+            <p class="subtitle">Enter your name to get started</p>
+        </div>
+
+        <form id="joinForm" class="form">
+            <div class="input-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Enter your name">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="joinBtn">
+                <span class="btn-text">Join Queue</span>
+                <span class="spinner" style="display: none;"></span>
+            </button>
+
+            <div id="message" class="message"></div>
+        </form>
+
+        <div class="footer">
+            <p>Are you a teacher? <a href="teacher.html">Click here</a></p>
+        </div>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>

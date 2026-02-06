@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Teacher Dashboard - Flow Optima Queue</title>
+    <link rel="stylesheet" href="../styles/main-style.css">
+</head>
+<body class="teacher-dashboard">
+    <div class="dashboard-container">
+        <!-- Header -->
+        <div class="dashboard-header">
+            <div class="welcome">
+                <h2>Welcome, <span id="teacherName"></span></h2>
+                <p class="subtitle">Queue Management Dashboard</p>
+            </div>
+            <button id="logoutBtn" class="btn btn-logout">Logout</button>
+        </div>
+
+        <!-- Current Number Display -->
+        <div class="current-number-section">
+            <div class="label">Now Serving</div>
+            <div class="current-number" id="currentNumber">0</div>
+            <div class="current-student" id="currentStudent">No student</div>
+            <div class="queue-info">
+                <span>Current: <strong id="currentNumDisplay">0</strong></span>
+                <span class="separator">|</span>
+                <span>Last: <strong id="lastNumDisplay">0</strong></span>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button id="nextBtn" class="btn btn-next">
+            <span class="btn-icon">▶</span>
+            <span class="btn-text">Next Student</span>
+        </button>
+
+        <!-- Lost Focus Students -->
+        <div id="lostFocusSection" class="section" style="display: none;">
+            <h3 class="section-title">⚠️ Students Who Lost Focus</h3>
+            <div id="lostFocusContainer" class="student-list"></div>
+        </div>
+
+        <!-- Waiting Students -->
+        <div class="section">
+            <h3 class="section-title">📋 Waiting Queue</h3>
+            <div id="waitingListContainer" class="student-list">
+                <div class="empty-state">No students in queue</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

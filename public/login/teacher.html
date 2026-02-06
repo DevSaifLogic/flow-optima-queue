@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Teacher Login - Flow Optima Queue</title>
+    <link rel="stylesheet" href="../styles/login-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">👨‍🏫</div>
+            <h1>Teacher Login</h1>
+            <p class="subtitle">Queue Management System</p>
+        </div>
+
+        <form id="loginForm" class="form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required autocomplete="username">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="loginBtn">
+                <span class="btn-text">Login</span>
+                <span class="spinner" style="display: none;"></span>
+            </button>
+
+            <div id="message" class="message"></div>
+        </form>
+
+        <div class="footer">
+            <p>Are you a student? <a href="student.html">Click here</a></p>
+        </div>
+    </div>
+
+    <script src="teacher.js"></script>
+</body>
+</html>

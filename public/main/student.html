@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Student Dashboard - Flow Optima Queue</title>
+    <link rel="stylesheet" href="../styles/main-style.css">
+</head>
+<body class="student-dashboard" id="studentBody">
+    <div class="dashboard-container">
+        <!-- Header -->
+        <div class="dashboard-header">
+            <div class="welcome">
+                <h2>Welcome, <span id="studentName"></span></h2>
+                <p class="subtitle">Your Queue Status</p>
+            </div>
+            <button id="logoutBtn" class="btn btn-logout">Logout</button>
+        </div>
+
+        <!-- My Number Display -->
+        <div class="my-number-section">
+            <div class="label">Your Number</div>
+            <div class="my-number" id="myNumber">-</div>
+            <div class="status-message" id="statusMessage">Get a number to join the queue</div>
+            <div class="queue-info">
+                <span>Current: <strong id="currentNumDisplay">0</strong></span>
+                <span class="separator">|</span>
+                <span>Position: <strong id="positionDisplay">-</strong></span>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="getNumberBtn" class="btn btn-primary">
+                <span class="btn-icon">🎫</span>
+                <span class="btn-text">Get a Number</span>
+            </button>
+            <button id="removeNumberBtn" class="btn btn-danger" style="display: none;">
+                <span class="btn-icon">❌</span>
+                <span class="btn-text">Remove Number</span>
+            </button>
+        </div>
+
+        <div id="cooldownMessage" class="cooldown-message" style="display: none;"></div>
+
+        <!-- Info Section -->
+        <div class="info-section">
+            <div class="info-card">
+                <div class="info-icon">🟢</div>
+                <div class="info-text">Green = Your Turn!</div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🟡</div>
+                <div class="info-text">Yellow = Almost There (1-3 away)</div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">⚪</div>
+                <div class="info-text">White = Waiting</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>

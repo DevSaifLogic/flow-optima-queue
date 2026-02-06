@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    background: #f1f5f9;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+}
+
+/* Background color states for student dashboard */
+.student-dashboard.bg-green {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.student-dashboard.bg-yellow {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome h2 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 4px;
+}
+
+.welcome h2 span {
+    color: #667eea;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.btn-logout {
+    padding: 10px 20px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.btn-logout:active {
+    transform: translateY(0);
+}
+
+/* Current Number Section (Teacher) */
+.current-number-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-out 0.1s backwards;
+}
+
+/* My Number Section (Student) */
+.my-number-section {
+    background: white;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-out 0.1s backwards;
+}
+
+.student-dashboard.bg-green .my-number-section {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.student-dashboard.bg-yellow .my-number-section {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.label {
+    font-size: 14px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.current-number, .my-number {
+    font-size: 80px;
+    font-weight: 800;
+    color: #667eea;
+    margin: 10px 0;
+    text-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.current-number.pulse, .my-number.pulse {
+    animation: pulse 0.6s ease;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.current-student, .status-message {
+    font-size: 18px;
+    font-weight: 600;
+    color: #64748b;
+    margin-top: 10px;
+}
+
+.queue-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #f1f5f9;
+    font-size: 14px;
+    color: #64748b;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.queue-info strong {
+    color: #1e293b;
+    font-size: 16px;
+}
+
+.separator {
+    color: #cbd5e1;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::before {
+    width: 400px;
+    height: 400px;
+}
+
+.btn-next {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-out 0.2s backwards;
+}
+
+.btn-next:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(34, 197, 94, 0.4);
+}
+
+.btn-next:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-next:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn-icon {
+    font-size: 20px;
+}
+
+/* Action Buttons (Student) */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-out 0.2s backwards;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+}
+
+.btn-danger:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(239, 68, 68, 0.4);
+}
+
+.btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Cooldown Message */
+.cooldown-message {
+    background: #fef3c7;
+    border: 2px solid #fbbf24;
+    color: #92400e;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+}
+
+/* Info Section */
+.info-section {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-out 0.3s backwards;
+}
+
+.student-dashboard.bg-green .info-section {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.student-dashboard.bg-yellow .info-section {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.info-card:last-child {
+    margin-bottom: 0;
+}
+
+.info-icon {
+    font-size: 24px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #475569;
+    font-weight: 500;
+}
+
+/* Section */
+.section {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.5s ease-out 0.3s backwards;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Student List */
+.student-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.empty-state {
+    text-align: center;
+    color: #94a3b8;
+    padding: 30px 20px;
+    font-size: 15px;
+}
+
+.student-card {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.student-card:hover {
+    border-color: #cbd5e1;
+    transform: translateX(5px);
+}
+
+.student-card.alert {
+    background: #fef3c7;
+    border-color: #fbbf24;
+}
+
+.student-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: #667eea;
+    min-width: 50px;
+}
+
+.student-name {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.student-status {
+    font-size: 12px;
+    color: #92400e;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 15px;
+    }
+
+    .dashboard-header {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .btn-logout {
+        width: 100%;
+    }
+
+    .current-number, .my-number {
+        font-size: 64px;
+    }
+
+    .queue-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .separator {
+        display: none;
+    }
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media screen and (max-width: 767px) {
+    input, select, textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Touch feedback */
+@media (hover: none) {
+    .btn:active:not(:disabled) {
+        transform: scale(0.98);
+    }
+}
+
+/* Loading animation */
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.loading {
+    background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite;
+}
