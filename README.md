@@ -1,4 +1,4 @@
-<img width="1170" height="2532" alt="07-student-dashboard-white" src="https://github.com/user-attachments/assets/95dca7b0-2bb6-44a6-9c17-90b5c7d8719c" /># Flow-Optima-Queue
+# Flow-Optima-Queue
 
 A mobile-first queue management system designed for teachers and students. Teachers can manage the queue in real-time while students can join, get numbers, and track their position with visual feedback.
 
