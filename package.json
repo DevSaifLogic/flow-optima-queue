@@ -2,7 +2,7 @@
   "name": "flow-optima-queue",
   "version": "1.0.0",
   "author": "Saif Hatem",
-  "description": "A high-concurrency, state-managed queue system featuring real-time telemetry and focus-tracking logic.",
+  "description": "A real-time, mobile-first queue management system for teachers and students with live position tracking, session-based security (Bcrypt), lost focus detection, and heartbeat monitoring.",
   "license": "MIT",
   "private": "true",
   "main": "server.js",
