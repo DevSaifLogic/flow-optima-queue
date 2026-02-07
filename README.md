@@ -44,42 +44,32 @@ A mobile-first queue management system designed for teachers and students. Teach
 <summary>Click to expand screenshots</summary>
 
 ### Landing Page
-![Landing Page](<img width="1170" height="2532" alt="01-landing-page" src="https://github.com/user-attachments/assets/fc5b2976-a398-4632-9065-88823e29728d" />
-)
+![Landing Page](https://snipboard.io/iJblSa.jpg)
 
 ### Teacher Login
-![Teacher Login](<img width="1170" height="2532" alt="02-teacher-login" src="https://github.com/user-attachments/assets/5ca165c1-8a12-4bd5-a006-be4c13471166" />
-)
+![Teacher Login](https://snipboard.io/rj9ca5.jpg)
 
 ### Teacher Dashboard
-![Teacher Dashboard](<img width="1170" height="2532" alt="04-teacher-dashboard" src="https://github.com/user-attachments/assets/b517e3f5-a995-465d-9635-b61ddf1995e4" />
-)
+![Teacher Dashboard](https://snipboard.io/D71V5k.jpg)
 
 ### Teacher Dashboard (Lost Focus)
-![Teacher Dashboard Lost Focus](<img width="1170" height="2532" alt="05-teacher-lost-focus" src="https://github.com/user-attachments/assets/c3ad6ad8-ede9-4fda-9068-8f5754590499" />
-)
-![Teacher Dashboard Lost Focus2](<img width="1170" height="2532" alt="05b-teacher-lost-focus" src="https://github.com/user-attachments/assets/5b1db2fd-4ef7-4762-b9c2-70d1374683c1" />
-)
+![Teacher Dashboard Lost Focus](https://snipboard.io/dacybq.jpg)
+![Teacher Dashboard Lost Focus2](https://snipboard.io/lRTg8j.jpg)
 
 ### Student Join
-![Student Join](<img width="1170" height="2532" alt="03-student-join" src="https://github.com/user-attachments/assets/3ba8b631-f27d-44b5-8133-270899d5b147" />
-)
+![Student Join](https://snipboard.io/sk0Nbn.jpg)
 
 ### Student Dashboard (Green - Your Turn)
-![Student Dashboard Green](<img width="1170" height="2532" alt="09-student-dashboard-green" src="https://github.com/user-attachments/assets/21bf53fc-2dfb-4a6a-adf4-ef14580b8c84" />
-)
+![Student Dashboard Green](https://snipboard.io/Exd8sB.jpg)
 
 ### Student Dashboard (Yellow - Almost There)
-![Student Dashboard Yellow](<img width="1170" height="2532" alt="07-student-dashboard-yellow" src="https://github.com/user-attachments/assets/adc9256d-d446-4b8e-be49-de6e26a1119b" />
-)
+![Student Dashboard Yellow](https://snipboard.io/t4Zl1W.jpg)
 
 ### Student Dashboard (White - Waiting)
-![Student Dashboard White](<img width="1170" height="2532" alt="07-student-dashboard-white" src="https://github.com/user-attachments/assets/accb0f16-9818-4f47-8179-38202fc7845a" />
-)
+![Student Dashboard White](https://snipboard.io/amiDX6.jpg)
 
 ### Student Dashboard (White - No Number)
-![Student Dashboard No Number](<img width="1170" height="2532" alt="06-student-dashboard-no-number" src="https://github.com/user-attachments/assets/7c869954-83fe-4980-80a9-d7c7c209d883" />
-)
+![Student Dashboard No Number](https://snipboard.io/IT4VnS.jpg)
 
 </details>
 
