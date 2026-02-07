@@ -1,4 +1,4 @@
-# Queue Management System
+<img width="1170" height="2532" alt="07-student-dashboard-white" src="https://github.com/user-attachments/assets/95dca7b0-2bb6-44a6-9c17-90b5c7d8719c" /># Flow-Optima-Queue
 
 A mobile-first queue management system designed for teachers and students. Teachers can manage the queue in real-time while students can join, get numbers, and track their position with visual feedback.
 
@@ -38,6 +38,51 @@ A mobile-first queue management system designed for teachers and students. Teach
 - **Storage**: JSON file-based database
 - **Language**: Full English interface
 
+## 📸 Screenshots
+
+<details>
+<summary>Click to expand screenshots</summary>
+
+### Landing Page
+![Landing Page](<img width="1170" height="2532" alt="01-landing-page" src="https://github.com/user-attachments/assets/fc5b2976-a398-4632-9065-88823e29728d" />
+)
+
+### Teacher Login
+![Teacher Login](<img width="1170" height="2532" alt="02-teacher-login" src="https://github.com/user-attachments/assets/5ca165c1-8a12-4bd5-a006-be4c13471166" />
+)
+
+### Teacher Dashboard
+![Teacher Dashboard](<img width="1170" height="2532" alt="04-teacher-dashboard" src="https://github.com/user-attachments/assets/b517e3f5-a995-465d-9635-b61ddf1995e4" />
+)
+
+### Teacher Dashboard (Lost Focus)
+![Teacher Dashboard Lost Focus](<img width="1170" height="2532" alt="05-teacher-lost-focus" src="https://github.com/user-attachments/assets/c3ad6ad8-ede9-4fda-9068-8f5754590499" />
+)
+![Teacher Dashboard Lost Focus2](<img width="1170" height="2532" alt="05b-teacher-lost-focus" src="https://github.com/user-attachments/assets/5b1db2fd-4ef7-4762-b9c2-70d1374683c1" />
+)
+
+### Student Join
+![Student Join](<img width="1170" height="2532" alt="03-student-join" src="https://github.com/user-attachments/assets/3ba8b631-f27d-44b5-8133-270899d5b147" />
+)
+
+### Student Dashboard (Green - Your Turn)
+![Student Dashboard Green](<img width="1170" height="2532" alt="09-student-dashboard-green" src="https://github.com/user-attachments/assets/21bf53fc-2dfb-4a6a-adf4-ef14580b8c84" />
+)
+
+### Student Dashboard (Yellow - Almost There)
+![Student Dashboard Yellow](<img width="1170" height="2532" alt="07-student-dashboard-yellow" src="https://github.com/user-attachments/assets/adc9256d-d446-4b8e-be49-de6e26a1119b" />
+)
+
+### Student Dashboard (White - Waiting)
+![Student Dashboard White](<img width="1170" height="2532" alt="07-student-dashboard-white" src="https://github.com/user-attachments/assets/accb0f16-9818-4f47-8179-38202fc7845a" />
+)
+
+### Student Dashboard (White - No Number)
+![Student Dashboard No Number](<img width="1170" height="2532" alt="06-student-dashboard-no-number" src="https://github.com/user-attachments/assets/7c869954-83fe-4980-80a9-d7c7c209d883" />
+)
+
+</details>
+
 ## Installation
 
 ### 1. Download the Project
@@ -47,7 +92,7 @@ Clone or download the project files.
 ### 2. Install Dependencies
 
 ```bash
-cd queue_system
+cd flow-optima-queue
 npm install
 ```
 
@@ -75,8 +120,6 @@ The server will run on `http://localhost:3000`
 ### For Teachers
 
 #### 1. Initial Setup (On Your Device Only)
-
-Navigate to `http://localhost:3000/login/teacher.html`
 
 You'll need to create a teacher account by making a POST request to `/teacher/signup`:
 
@@ -130,14 +173,14 @@ curl -X POST http://localhost:3000/teacher/signup \
 - **Background Color Changes**:
   - Green when it's your turn
   - Yellow when 1-3 people ahead
-  - White when waiting
+  - White when waiting or without number
 - **Remove Number**: Click to leave the queue (2-minute cooldown applies)
 - **Auto-Update**: Dashboard refreshes every 5 seconds
 
 ## Project Structure
 
 ```
-queue_system/
+flow-optima-queue/
 ├── database/
 │   └── teachers.json          # Teacher credentials (auto-created)
 ├── public/
@@ -384,7 +427,7 @@ app.use(session({
 
 MIT License
 
-Copyright (c) 2024 Queue Management System
+Copyright (c) 2024 Flow-Optima-Queue
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
