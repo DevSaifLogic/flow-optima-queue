@@ -1,6 +1,6 @@
 # Flow-Optima-Queue
 
-A mobile-first queue management system designed for teachers and students. Teachers can manage the queue in real-time while students can join, get numbers, and track their position with visual feedback.
+A real-time, mobile-first queue management system for teachers and students with live position tracking, session-based security (Bcrypt), lost focus detection, and heartbeat monitoring.
 
 ## Features
 
